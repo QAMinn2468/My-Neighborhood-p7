@@ -2,13 +2,22 @@
 
 Welcome to my map of Fareham, England.  This project is built with Yarn and React.js.  This is project 7 of 7 in Udacity's Front End NanoDegree.
 
+# Instructions
+
+Download from https://github.com/QAMinn2468/p7.  On the command line, in the program folder, type: 'yarn install' then 'yarn start'.  This will open a local server on your browser where you may view the project.
+
 
 # A11y
 
-My first step was to set the language equal to British English.  It just makes sense to have ChromeVox announcing British place names with a British accent.
+My first step was to set the language to British English.  It just makes sense to have ChromeVox announcing British place names with a British accent.
 
 
 
 # Recommended Reading
 
 https://medium.com/in-the-weeds/learning-react-with-create-react-app-part-1-a12e1833fdc - This walks you through using Yarn to create a React app.
+
+
+# Resources Used to Create this Project
+
+https://www.freefavicon.com/freefavicons/objects/downloadicon.php?ico=map-pin-195874.zip - The icon used for the Title Tab.
