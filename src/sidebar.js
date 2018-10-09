@@ -10,6 +10,8 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="sidebar">
+        <div className="search"></div>
+        <h2>Search Results</h2>
       </div>
     );
   }
