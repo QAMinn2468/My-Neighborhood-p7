@@ -12,9 +12,14 @@ import {
 const MyMapComponent = withScriptjs(
   withGoogleMap((props) =>
   <GoogleMap defaultZoom={15.2} defaultCenter={{lat: 50.853673, lng: -1.1855}}>
-    {props.isMarkerShown &&
-      <Marker position={{ lat: -34.397, lng: 150.644 }} />
-    }
+
+      <Marker       position={{lat: 50.851218, lng: -1.178828}} />
+      <Marker       position={{lat: 50.851267, lng: -1.2010895}} />
+      <Marker       position={{lat: 50.853946, lng: -1.177275 }} />
+      <Marker       position={{lat: 50.852934, lng: -1.191898 }} />
+      <Marker       position={{lat: 50.8574, lng: -1.1849 }} />
+
+    
   </GoogleMap>
 ))
 
