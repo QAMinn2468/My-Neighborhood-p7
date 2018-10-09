@@ -27,3 +27,5 @@ https://tomchentw.github.io/react-google-maps/  - Information on adding React-Go
 https://www.youtube.com/watch?v=Q0vzqlnWWZw&index=2&list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP - Walkthrough by Forrest Walker, part 2
 
 https://openweathermap.org/current#geo - Additional API - Weather (provide lat/lon and receive local weather)
+
+My project 6
