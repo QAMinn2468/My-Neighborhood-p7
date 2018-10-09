@@ -1,3 +1,4 @@
+/****************************General Styling***********************************/
 h1, p {
   text-align: center;
 }
@@ -9,6 +10,8 @@ html, body {
   background-color: aquamarine;
 }
 
+/**************************Map Styling*****************************************/
+
 #map {
   height: 80%;
   width: 70%;
@@ -17,13 +20,15 @@ html, body {
   margin-right: 5%;
   }
 
+
+/**************************Break Point*****************************************/
 @media screen and (max-width: 550px) {
   #map{
     height: 100%;
     width: 100%;
   }
 
-  html, body {
+html, body {
     background-color: darkturquoise;
   }
 }

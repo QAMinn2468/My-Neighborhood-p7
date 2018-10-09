@@ -21,3 +21,9 @@ https://medium.com/in-the-weeds/learning-react-with-create-react-app-part-1-a12e
 # Resources Used to Create this Project
 
 https://www.freefavicon.com/freefavicons/objects/downloadicon.php?ico=map-pin-195874.zip - The icon used for the Title Tab.
+
+https://tomchentw.github.io/react-google-maps/  - Information on adding React-Google-Maps
+
+https://www.youtube.com/watch?v=Q0vzqlnWWZw&index=2&list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP - Walkthrough by Forrest Walker, part 2
+
+https://openweathermap.org/current#geo - Additional API - Weather

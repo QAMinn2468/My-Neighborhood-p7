@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^6.5.4",
+    "babel-traverse": "^6.26.0",
     "react": "^16.5.2",
     "react-dom": "^16.2.0",
+    "react-google-maps": "^9.4.5",
     "react-select": "^2.1.0",
-    "react-slick": "^0.23.1",
-    "autoprefixer": "^6.5.4"
+    "react-slick": "^0.23.1"
   },
   "devDependencies": {
+    "babel-core": "6",
     "react-scripts": "1.0.17"
   },
   "scripts": {
