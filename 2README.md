@@ -1,6 +1,6 @@
 # Intro
 
-Welcome to my map of Fareham, England.  This project is built with Yarn and React.js.  This is project 7 of 7 in Udacity's Front End NanoDegree.
+Welcome to my map of Fareham, England.  This project is built with Yarn and React.js.  This is project 7 of 7 in Udacity's Front End NanoDegree.  OpenWeatherMap.org is used for the third-party API, which provides the local weather.
 
 # Instructions
 
@@ -26,4 +26,4 @@ https://tomchentw.github.io/react-google-maps/  - Information on adding React-Go
 
 https://www.youtube.com/watch?v=Q0vzqlnWWZw&index=2&list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP - Walkthrough by Forrest Walker, part 2
 
-https://openweathermap.org/current#geo - Additional API - Weather
+https://openweathermap.org/current#geo - Additional API - Weather (provide lat/lon and receive local weather)
