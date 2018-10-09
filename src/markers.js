@@ -1,4 +1,4 @@
-[
+const places = [
 {
       name:school,
       position: {lat: 50.851267, lng: -1.2010895},

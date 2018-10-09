@@ -19,7 +19,7 @@ const MyMapComponent = withScriptjs(
       <Marker       position={{lat: 50.852934, lng: -1.191898 }} />
       <Marker       position={{lat: 50.8574, lng: -1.1849 }} />
 
-    
+
   </GoogleMap>
 ))
 
@@ -36,7 +36,7 @@ export default class Map extends Component {
       isMarkerShown
       googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAKWNbLQsSKzpiC-JHL86FKXVM5EMwVUwE"
       loadingElement={<div style={{ height: `100%` }} />}
-      containerElement={<div style={{ height: `400px` }} />}
+      containerElement={<div style={{ height: `550px` }} />}
       mapElement={<div style={{ height: `100%` }} />}
     />
 )
