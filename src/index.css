@@ -10,6 +10,20 @@ html, body {
   background-color: aquamarine;
 }
 
+/**************************Banner Styling*****************************************/
+
+.banner {
+  background-color: black;
+  color: beige;
+  width: 100%;
+  height: 1.2em;
+  position: absolute;
+  z-index: 5;
+  font-size: 3em;
+  text-align: center;
+
+}
+
 /**************************Map Styling*****************************************/
 
 #map {
