@@ -13,11 +13,11 @@ const MyMapComponent = withScriptjs(
   withGoogleMap((props) =>
   <GoogleMap defaultZoom={15.2} defaultCenter={{lat: 50.853673, lng: -1.1855}}>
 
-      <Marker       position={{lat: 50.851218, lng: -1.178828}} />
-      <Marker       position={{lat: 50.851267, lng: -1.2010895}} />
-      <Marker       position={{lat: 50.853946, lng: -1.177275 }} />
-      <Marker       position={{lat: 50.852934, lng: -1.191898 }} />
-      <Marker       position={{lat: 50.8574, lng: -1.1849 }} />
+      <Marker  title="St. Jude Primary School"     position={{lat: 50.851218, lng: -1.178828}} />
+      <Marker   title="Sacred Heart Church"    position={{lat: 50.851267, lng: -1.2010895}} />
+      <Marker   title="Fareham Public Library"    position={{lat: 50.853946, lng: -1.177275 }} />
+      <Marker   title="Fareham Train Station"    position={{lat: 50.852934, lng: -1.191898 }} />
+      <Marker   title="Fareham Leisure Centre"    position={{lat: 50.8574, lng: -1.1849 }} />
 
 
   </GoogleMap>
