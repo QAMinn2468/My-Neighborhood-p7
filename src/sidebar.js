@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import './index.css';
-// import Search from './search.js'
-// <Search />
-// import {
-//         StandaloneSearchBox
-//        } from "react-google-maps"
 
 
 
@@ -13,9 +8,13 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="sidebar">
-        <div className="search"></div>
+        <div className="search">
+        </div>
+        <div className="filter">
+          <input className="filterBox" type="text" placeholder="  type here"></input>
+        </div>
 
-        <h2>Search Results</h2>
+        <h2>Results</h2>
       </div>
     );
   }
