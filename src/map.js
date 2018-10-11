@@ -5,7 +5,7 @@ import {
          GoogleMap,
          Marker
        } from "react-google-maps"
-
+import bluePin from './bluePin.png'
 
 
  // this if for max size (lng -1.1855) zoom 15.2. when reduced, take zoom to 14.8, adjust lng (-1.19) increase % on smaller screens
@@ -120,11 +120,11 @@ const MyMapComponent = withScriptjs(
       ] }} >
 
 
-      <Marker   title="St. Jude Primary School" position={{lat: 50.851267, lng: -1.2010895}} />
-      <Marker   title="Sacred Heart Church"     position={{lat: 50.851218, lng: -1.178828}} />
-      <Marker   title="Fareham Public Library"  position={{lat: 50.853946, lng: -1.177275 }} />
-      <Marker   title="Fareham Train Station"   position={{lat: 50.852934, lng: -1.191898 }} />
-      <Marker   title="Fareham Leisure Centre"  position={{lat: 50.8574, lng: -1.1849 }} />
+      <Marker   icon={{ url: bluePin }} title="St. Jude Primary School" position={{lat: 50.851267, lng: -1.2010895}} />
+      <Marker   icon={{ url: bluePin }} title="Sacred Heart Church"     position={{lat: 50.851218, lng: -1.178828}} />
+      <Marker   icon={{ url: bluePin }} title="Fareham Public Library"  position={{lat: 50.853946, lng: -1.177275 }} />
+      <Marker   icon={{ url: bluePin }} title="Fareham Train Station"   position={{lat: 50.852934, lng: -1.191898 }} />
+      <Marker   icon={{ url: bluePin }} title="Fareham Leisure Centre"  position={{lat: 50.8574, lng: -1.1849 }} />
 
   </GoogleMap>
 ))
