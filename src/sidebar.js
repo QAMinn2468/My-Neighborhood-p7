@@ -11,7 +11,7 @@ class Sidebar extends Component {
         <div className="search">
         </div>
         <div className="filter">
-          <input className="filterBox" type="text" placeholder="  type here"></input>
+          <input className="filterBox" type="text" aria-label="input box" placeholder="  Filter by Name"></input>
         </div>
 
         <h2>Results</h2>

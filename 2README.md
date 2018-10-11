@@ -29,3 +29,11 @@ https://www.youtube.com/watch?v=Q0vzqlnWWZw&index=2&list=PL4rQq4MQP1crXuPtruu_ei
 https://openweathermap.org/current#geo - Additional API - Weather (provide lat/lon and receive local weather)
 
 My project 6
+
+https://openweathermap.org/appid - Weather API - (Considering, however only allowed 1 call per 10 min, and weather is by city not by location.)
+
+# Chrome Extensions
+
+Google Maps Platform API Checker - version 1.1.8
+
+ChromeVox
