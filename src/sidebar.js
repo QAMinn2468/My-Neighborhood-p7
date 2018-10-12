@@ -6,9 +6,12 @@ import './index.css';
 const letters = ['A', 'B', 'C', 'D', 'E']
 
 function printList() {
-  letters.map(letter => (
-    <li>{letter}</li>)
-  )}
+  // letters.map(letter => (
+  //   <li>{letter}</li>)
+  //
+  // )
+  console.log(letters);
+}
 
 
 class Sidebar extends Component {
@@ -39,8 +42,12 @@ class Sidebar extends Component {
         </div>
 
         <h2>Results</h2>
-          <ol type="A">
+          <ol type="1">
             <li></li>
+              <li></li>
+                <li></li>
+                  <li></li>
+                    <li></li>
           {printList()}
           </ol>
       </div>
