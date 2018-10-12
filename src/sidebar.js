@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './index.css';
 
-// function printList(place) {
-//   this.state.places.map(place =>
-//     <li>{place.title}
-//     </li>
-//   )
-// }
 
-// line 42 onRender={ printList() }
+
+const letters = ['A', 'B', 'C', 'D', 'E']
+
+function printList() {
+  letters.map(letter => (
+    <li>{letter}</li>)
+  )}
 
 
 class Sidebar extends Component {
@@ -39,7 +39,9 @@ class Sidebar extends Component {
         </div>
 
         <h2>Results</h2>
-          <ol >
+          <ol type="A">
+            <li></li>
+          {printList()}
           </ol>
       </div>
     );
