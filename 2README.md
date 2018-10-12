@@ -2,6 +2,9 @@
 
 Welcome to my map of Fareham, England.  This project is built with Yarn and React.js.  This is project 7 of 7 in Udacity's Front End NanoDegree.  OpenWeatherMap.org is used for the third-party API, which provides the local weather.
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 # Instructions
 
 Download from https://github.com/QAMinn2468/p7.  On the command line, in the program folder, type: 'yarn install' then 'yarn start'.  This will open a local server on your browser where you may view the project.

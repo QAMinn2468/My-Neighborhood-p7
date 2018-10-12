@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './index.css';
 
-function printList(place) {
-  this.state.places.map(place =>
-    <li>{place.title}
-    </li>
-  )
-}
+// function printList(place) {
+//   this.state.places.map(place =>
+//     <li>{place.title}
+//     </li>
+//   )
+// }
+
+// line 42 onRender={ printList() }
 
 
 class Sidebar extends Component {
@@ -39,7 +41,7 @@ class Sidebar extends Component {
         </div>
 
         <h2>Results</h2>
-          <ol onRender={ printList() }>
+          <ol >
           </ol>
       </div>
     );

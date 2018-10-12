@@ -45,14 +45,9 @@ html, body {
 
 /**************************Map Styling*****************************************/
 
-#map {
-  height: 80%;
-  width: 70%;
-  position: absolute;
-  margin-left: 25%;
-  margin-right: 5%;
-  }
-
+.top {
+  height: 3.5em;  /*This allows the google map full screen icon to be seen and used */
+}
 
 /**************************Break Point*****************************************/
 @media screen and (max-width: 550px) {
