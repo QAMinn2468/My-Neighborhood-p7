@@ -35,8 +35,8 @@ html, body {
   position: absolute;
 }
 
-.search {
-  height: 7em;
+.filter {
+  padding-top: 7em;
 }
 
 .filterBox {

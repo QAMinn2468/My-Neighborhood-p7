@@ -26,8 +26,6 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="sidebar">
-        <div className="search">
-        </div>
         <div className="filter">
           <input
               className="filterBox"

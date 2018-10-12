@@ -54,8 +54,8 @@ class App extends Component {
     return (
       <div className="App">
         <Banner />
-        <Sidebar places={this.state.places}/>
-        <Map places={this.state.places}/>
+        <Sidebar places={this.state.places} />
+        <Map places={this.state.places} />
       </div>
     );
   }
