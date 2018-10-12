@@ -45,6 +45,10 @@ html, body {
 
 /**************************Map Styling*****************************************/
 
+#map {
+   height: 100%;
+ }
+ 
 .top {
   height: 3.5em;  /*This allows the google map full screen icon to be seen and used */
 }
