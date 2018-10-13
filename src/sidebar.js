@@ -22,7 +22,7 @@ class Sidebar extends Component {
           <input
               className="filterBox"
               type="text"
-              aria-label="input box"
+              // aria-label="input box"                                         //this feels redundant, omitting for now.
               placeholder="  Filter by Name"
               value={this.state.query}
               onChange={(event) =>
@@ -31,10 +31,12 @@ class Sidebar extends Component {
         </div>
 
         <h2>Results</h2>
-          <ol type="1">
-            <li></li>
-
-
+          <ol className="filteredList" type="1">
+            <li>St. Jude Primary School</li>
+            <li>Sacred Heart Church</li>
+            <li>Fareham Public Library</li>
+            <li>Fareham Train Station</li>
+            <li>Fareham Leisure Centre</li>
           </ol>
       </div>
     );
