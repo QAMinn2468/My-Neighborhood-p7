@@ -11,6 +11,7 @@ import {
 
  // this if for max size (lng -1.1855) zoom 15.2. when reduced, take zoom to 14.8, adjust lng (-1.19) increase % on smaller screens
 
+
 const MyMapComponent = withScriptjs(
   withGoogleMap((props) =>
   <GoogleMap
@@ -129,8 +130,11 @@ const MyMapComponent = withScriptjs(
   </GoogleMap>
 ))
 
+/*********************************Start of Component***************************/
 
 export default class Map extends Component {
+
+/********************************Render Method*********************************/
 
   render () {
     return (

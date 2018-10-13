@@ -29,13 +29,13 @@ https://tomchentw.github.io/react-google-maps/  - Information on adding React-Go
 
 https://www.youtube.com/watch?v=Q0vzqlnWWZw&index=2&list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP - Walkthrough by Forrest Walker, part 2
 
-https://openweathermap.org/current#geo - Additional API - Weather (provide lat/lon and receive local weather)
-
-My project 6
+My project 6, W3Schools.com, Slack Channel, Reactjs.org
 
 https://openweathermap.org/appid - Weather API - (Considering, however only allowed 1 call per 10 min, and weather is by city not by location.)
 
-# Chrome Extensions
+
+
+# Chrome Extensions - helpful, not necessary
 
 Google Maps Platform API Checker - version 1.1.8
 

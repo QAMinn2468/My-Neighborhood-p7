@@ -1,19 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 
-
-
-const letters = ['A', 'B', 'C', 'D', 'E']
-
-function printList() {
-  // letters.map(letter => (
-  //   <li>{letter}</li>)
-  //
-  // )
-  console.log(letters);
-}
-
-
+/*********************************Start of Component***************************/
 class Sidebar extends Component {
   state = {
     query: ''
@@ -23,9 +11,10 @@ class Sidebar extends Component {
   this.setState({
     query: query
   })
-  // this.searchForPlace(query)
+  console.log(query)                                                            // Query prints to screen with each keystroke
 }
 
+/********************************Render Method*********************************/
   render() {
     return (
       <div className="sidebar">
@@ -44,11 +33,8 @@ class Sidebar extends Component {
         <h2>Results</h2>
           <ol type="1">
             <li></li>
-              <li></li>
-                <li></li>
-                  <li></li>
-                    <li></li>
-          {printList()}
+
+
           </ol>
       </div>
     );

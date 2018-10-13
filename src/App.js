@@ -4,6 +4,8 @@ import Map from './map.js'
 import Banner from './banner.js'
 import Sidebar from './sidebar.js'
 
+/*********************************Start of Component***************************/
+
 class App extends Component {
   state = {
     places: [
@@ -49,6 +51,7 @@ class App extends Component {
          }
        ]
   }
+/********************************Render Method*********************************/
 
   render() {
     return (

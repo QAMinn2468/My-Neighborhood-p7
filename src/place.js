@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './index.css';
 
-function( {
-  this function will map the places array iterating over the Place Component
-})
 
+/*********************************Start of Component***************************/
 class Place extends Component {
+
+/*********************************Start of Component***************************/
 
   render() {
     return (
