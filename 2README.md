@@ -41,6 +41,8 @@ https://jsonformatter.curiousconcept.com/#learn - Proofreads your JSON. Also has
 
 http://myjson.com/ - Used to create my own API.
 
+https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/ - Intro to using API's
+
 
 
 

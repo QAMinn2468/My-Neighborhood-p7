@@ -11,13 +11,6 @@ import {
 
  // this if for max size (lng -1.1855) zoom 15.2. when reduced, take zoom to 14.8, adjust lng (-1.19) increase % on smaller screens
 
-
-// const myPlaces = 'https://api.myjson.com/bins/6k8i0' (URI)
-//
-// root: 'https://api.myjson.com/'
-// GET /bins/6k8i0
-
-
 const MyMapComponent = withScriptjs(
   withGoogleMap((props) =>
   <GoogleMap
