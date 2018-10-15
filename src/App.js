@@ -17,31 +17,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const request = new XMLHttpRequest()
-      request.open('GET', 'https://api.myjson.com/bins/6k8i0', true)
-      request.onload = function () {
-
-    // Begin accessing JSON data here
-    const placesArray = JSON.parse(this.response);
-    if (request.status >= 200 && request.status < 400) {
-      console.log(placesArray)
-
-      this.setState({ places: placesArray })
-
-    }
-
-      else {
-      const errorMessage = document.createElement('alert')
-      errorMessage.textContent = `There was an error.`
-      console.log(alert)
-    }
-
-
+      fetch('https://api.myjson.com/bins/6k8i0')
+        .then(res => res.json())
+        .then(myJSON => this.setState({ places: myJSON }))
+        .catch(error => console.log(error));
   }
 
-  request.send()
-
-  }
 /********************************Render Method*********************************/
 
   render() {

@@ -33,7 +33,7 @@ https://tomchentw.github.io/react-google-maps/  - Information on adding React-Go
 
 https://www.youtube.com/watch?v=Q0vzqlnWWZw&index=2&list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP - Walkthrough by Forrest Walker, part 2
 
-My project 6, W3Schools.com, Slack Channel, Reactjs.org
+My project 6, W3Schools.com, Slack Channel (Forrest(FEND), ), Reactjs.org
 
 <!-- https://openweathermap.org/appid - Weather API - (Considering, however only allowed 1 call per 10 min, and weather is by city not by location.) -->
 
