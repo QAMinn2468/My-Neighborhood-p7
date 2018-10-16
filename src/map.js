@@ -119,11 +119,11 @@ const MyMapComponent = withScriptjs(
           }
       ] }} >
 
-      <Marker   label="1" title="St. Jude Primary School" position={{lat: 50.851267, lng: -1.2010895}} />
-      <Marker   label="2" title="Sacred Heart Church"     position={{lat: 50.851218, lng: -1.178828}} />
-      <Marker   label="3" title="Fareham Public Library"  position={{lat: 50.853946, lng: -1.177275 }} />
-      <Marker   label="4" title="Fareham Train Station"   position={{lat: 50.852934, lng: -1.191898 }} />
-      <Marker   label="5" title="Fareham Leisure Centre"  position={{lat: 50.8574, lng: -1.1849 }} />}
+      <Marker   className="marker"  label="1" title="St. Jude Primary School" position={{lat: 50.851267, lng: -1.2010895}} />
+      <Marker   className="marker"  label="2" title="Sacred Heart Church"     position={{lat: 50.851218, lng: -1.178828}} />
+      <Marker   className="marker"  label="3" title="Fareham Public Library"  position={{lat: 50.853946, lng: -1.177275 }} />
+      <Marker   className="marker"  label="4" title="Fareham Train Station"   position={{lat: 50.852934, lng: -1.191898 }} />
+      <Marker   className="marker"  label="5" title="Fareham Leisure Centre"  position={{lat: 50.8574, lng: -1.1849 }} />}
 
 
   </GoogleMap>

@@ -20,7 +20,6 @@ html, body {
   z-index: 5;
   font-size: 3em;
   text-align: center;
-
 }
 
 /**************************Sidebar Styling*****************************************/
@@ -52,16 +51,23 @@ li {
   font-weight: bold;
 }
 
+li:hover {
+  font-size: 1.1em;
+}
+
 /**************************Map Styling*****************************************/
 
 #map {
    height: 100%;
  }
 
-.top {
+/* .top {
   height: 3.5em;  /*This allows the google map full screen icon to be seen and used */
-}
+/* } */
 
+.marker:hover {
+  background-color: #12608d;
+}
 /**************************Break Point*****************************************/
 @media screen and (max-width: 550px) {
   #map{
