@@ -43,8 +43,8 @@ class Sidebar extends Component {
                       onClick={(event) => console.log(event.target)}>
                       {place.title}<br />
                       <figure>
-                      <img src={place.photo} alt={place.title} />
-                      <figcaption>{place.attribution}</figcaption>
+                      <img src={place.photo} alt="image of {place.title}" />
+                      <figcaption>Photo by: {place.attribution}</figcaption>
                       </figure>
                   </li>
               ))

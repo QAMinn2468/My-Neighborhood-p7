@@ -3,7 +3,8 @@ import {
          withScriptjs,
          withGoogleMap,
          GoogleMap,
-         Marker
+         Marker,
+         InfoWindow
        } from "react-google-maps"
 // import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox"
 
@@ -124,6 +125,7 @@ const MyMapComponent = withScriptjs(
       <Marker   className="marker"  label="3" title="Fareham Public Library"  position={{lat: 50.853946, lng: -1.177275 }} />
       <Marker   className="marker"  label="4" title="Fareham Train Station"   position={{lat: 50.852934, lng: -1.191898 }} />
       <Marker   className="marker"  label="5" title="Fareham Leisure Centre"  position={{lat: 50.8574, lng: -1.1849 }} />}
+
 
 
   </GoogleMap>

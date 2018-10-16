@@ -57,3 +57,17 @@ ChromeVox
 http://myjson.com/api
 
 the direct website: http://myjson.com/6k8i0
+
+
+
+
+
+
+
+#  Materials to be used:
+
+https://tomchentw.github.io/react-google-maps/#infowindow         https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow.setContent
+
+https://tomchentw.github.io/react-google-maps/#infobox         
+
+   http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/infobox/docs/reference.html
