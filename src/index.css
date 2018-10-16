@@ -55,6 +55,20 @@ li:hover {
   font-size: 1.1em;
 }
 
+figure img {
+  height: 9em;
+}
+
+figure {
+  margin-left: 0.1px;
+}
+
+figcaption {
+  color: black;
+  font-weight: normal;
+  font-size: .7em;
+}
+
 /**************************Map Styling*****************************************/
 
 #map {

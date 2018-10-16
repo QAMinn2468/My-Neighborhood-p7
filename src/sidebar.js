@@ -41,7 +41,11 @@ class Sidebar extends Component {
                 .map(place => (
                   <li key={place.title}
                       onClick={(event) => console.log(event.target)}>
-                  {place.title}
+                      {place.title}<br />
+                      <figure>
+                      <img src={place.photo} alt={place.title} />
+                      <figcaption>{place.attribution}</figcaption>
+                      </figure>
                   </li>
               ))
             }
