@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-      fetch('https://api.myjson.com/bins/6k8i0')
+      fetch('https://api.myjson.com/bins/1bsbyw')
         .then(res => res.json())
         .then(myJSON => this.setState({ places: myJSON }))
         .catch(error => console.log(error));
