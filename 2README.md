@@ -1,6 +1,6 @@
 # Intro
 
-Welcome to my map of Fareham, England.  This project is built with Yarn and React.js.  This is project 7 of 7 in Udacity's Front End NanoDegree.  myjson.com is used for the third-party API, which provides the array of places of interest.  This is a json file I gathered by researching various sources including MediaWiki and Google Maps.
+Welcome to my map of Fareham, England, UK.  This project is built with Yarn and React.js.  This is project 7 of 7 in Udacity's Front End NanoDegree.  myjson.com is used for the third-party API, which provides the array of places of interest.  This is a json file I gathered by researching various sources including MediaWiki and Google Maps.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

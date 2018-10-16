@@ -49,6 +49,8 @@ ol {
 li {
   margin: 20px;
   font-weight: bold;
+  background-color: lightgrey;
+
 }
 
 li:hover {
@@ -56,7 +58,7 @@ li:hover {
 }
 
 figure img {
-  height: 9em;
+  width: 12em;
 }
 
 figure {
