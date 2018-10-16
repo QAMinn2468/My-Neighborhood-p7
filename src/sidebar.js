@@ -39,7 +39,8 @@ class Sidebar extends Component {
               >
               {this.props.places
                 .map(place => (
-                  <li key={place.title}>
+                  <li key={place.title}
+                      onClick={(event) => console.log(event.target)}>
                   {place.title}
                   </li>
               ))
