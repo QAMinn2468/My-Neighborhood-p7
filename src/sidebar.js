@@ -14,8 +14,10 @@ class Sidebar extends Component {
   console.log(query)                                                            // Query prints to screen with each keystroke
 }
 
+
 /********************************Render Method*********************************/
   render() {
+
     return (
       <div className="sidebar">
         <div className="filter">
@@ -31,12 +33,18 @@ class Sidebar extends Component {
         </div>
 
         <h2>Results</h2>
-          <ol className="filteredList" type="1">
-            <li>St. Jude Primary School</li>
-            <li>Sacred Heart Church</li>
-            <li>Fareham Public Library</li>
-            <li>Fareham Train Station</li>
-            <li>Fareham Leisure Centre</li>
+          <ol className="filteredList"
+              type="1"
+              places={this.props.places}
+              >
+              {this.props.places.places
+                .filter(place => place.title === this.state.query.place.title)
+                .map(place => (
+                  <li key={place.title}>
+                  {place.title}
+                  </li>
+              ))
+            }
           </ol>
       </div>
     );
