@@ -5,10 +5,6 @@ import Banner from './banner.js'
 import Sidebar from './sidebar.js'
 
 
-
-
-
-
 /*********************************Start of Component***************************/
 
 class App extends Component {

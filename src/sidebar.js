@@ -37,8 +37,7 @@ class Sidebar extends Component {
               type="1"
               places={this.props.places}
               >
-              {this.props.places.places
-                .filter(place => place.title === this.state.query.place.title)
+              {this.props.places
                 .map(place => (
                   <li key={place.title}>
                   {place.title}
