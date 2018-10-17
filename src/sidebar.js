@@ -11,7 +11,6 @@ class Sidebar extends Component {
   this.setState({
     query: query
   })
-  console.log(query)                                                            // Query prints to screen with each keystroke
 }
 
 
@@ -24,7 +23,6 @@ class Sidebar extends Component {
           <input
               className="filterBox"
               type="text"
-              // aria-label="input box"                                         //this feels redundant, omitting for now.
               placeholder="  Filter by Name"
               value={this.state.query}
               onChange={(event) =>

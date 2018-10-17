@@ -81,9 +81,7 @@ figcaption {
   height: 3.5em;  /*This allows the google map full screen icon to be seen and used */
 /* } */
 
-.marker:hover {
-  background-color: #12608d;
-}
+
 /**************************Break Point*****************************************/
 @media screen and (max-width: 550px) {
   #map{
