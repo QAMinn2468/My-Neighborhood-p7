@@ -4,7 +4,7 @@ import {
          withGoogleMap,
          GoogleMap,
          Marker,
-         InfoWindow
+         // InfoWindow
        } from "react-google-maps"
 // import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox"
 
