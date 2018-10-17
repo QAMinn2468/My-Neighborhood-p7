@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import './index.css';
 
-class Banner extends Component {
+const Banner = ({name}) => {
 
-  render() {
     return (
       <div className="banner">Fareham, UK</div>
     );
   }
-}
 
 export default Banner;
