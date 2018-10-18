@@ -81,6 +81,9 @@ figcaption {
   height: 3.5em;  /*This allows the google map full screen icon to be seen and used */
 /* } */
 
+footer {
+  text-align: center;
+}
 
 /**************************Break Point*****************************************/
 @media screen and (max-width: 550px) {
@@ -90,8 +93,6 @@ figcaption {
   }
 
 html, body {
-    background-color: darkturquoise;
+    background-color: lightgrey;
   }
 }
-
-/*****************within breakpoint - toggle sidebar/hamburger icon ***********/
