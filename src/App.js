@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './index.css';
+import React, { Component } from 'react'
+import './index.css'
 import Map from './map.js'
 import Banner from './banner.js'
 import Sidebar from './sidebar.js'

@@ -1,11 +1,11 @@
-import React from 'react';
-import './index.css';
+import React from 'react'
+import './index.css'
 
 const Banner = ({name}) => {
 
     return (
       <div className="banner">Fareham, UK</div>
-    );
+    )
   }
 
-export default Banner;
+export default Banner

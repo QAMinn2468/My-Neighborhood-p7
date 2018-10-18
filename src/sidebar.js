@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './index.css';
+import React, { Component } from 'react'
+import './index.css'
+import Figure from './figure.js'
 
 /*********************************Start of Component***************************/
 class Sidebar extends Component {
@@ -16,6 +17,9 @@ class Sidebar extends Component {
 
 /********************************Render Method*********************************/
   render() {
+    const listed = document.getElementById(listed)
+
+
 
     return (
       <div className="sidebar">
@@ -40,12 +44,12 @@ class Sidebar extends Component {
                 .map(place => (
                   <li key={place.title}
                       tabIndex="0"
-                      onClick={(event) => console.log(event.target)}>
-                      {place.title}<br />
-                      <figure>
-                      <img src={place.photo} alt={place.title} />
-                      <figcaption>Taken by: {place.attribution}</figcaption>
-                      </figure>
+                      id="listed"
+                      onClick={(event) =>
+                        listed.appendChild(
+                          <Figure place={this.props.place}/>
+                        )}>
+                      {place.title}
                   </li>
               ))
             }
