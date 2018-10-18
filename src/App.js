@@ -16,7 +16,8 @@ class App extends Component {
       fetch('https://api.myjson.com/bins/1bsbyw')
         .then(res => res.json())
         .then(myJSON => this.setState({ places: myJSON }))
-        .catch(error => console.log(error));
+        .catch(error =>
+          alert("I'm sorry, there was an error"));
   }
 
 /********************************Render Method*********************************/
