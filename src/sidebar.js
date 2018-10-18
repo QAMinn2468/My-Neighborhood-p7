@@ -21,6 +21,7 @@ class Sidebar extends Component {
       <div className="sidebar">
         <div className="filter">
           <input
+              aria-label="input"
               className="filterBox"
               type="text"
               placeholder="  Filter by Name"
@@ -38,6 +39,8 @@ class Sidebar extends Component {
               {this.props.places
                 .map(place => (
                   <li key={place.title}
+                      tabindex="0"
+                      aria-role="button"
                       onClick={(event) => console.log(event.target)}>
                       {place.title}<br />
                       <figure>
