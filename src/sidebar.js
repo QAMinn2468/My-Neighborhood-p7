@@ -39,8 +39,7 @@ class Sidebar extends Component {
               {this.props.places
                 .map(place => (
                   <li key={place.title}
-                      tabindex="0"
-                      aria-role="button"
+                      tabIndex="0"
                       onClick={(event) => console.log(event.target)}>
                       {place.title}<br />
                       <figure>

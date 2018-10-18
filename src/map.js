@@ -120,11 +120,11 @@ const MyMapComponent = withScriptjs(
           }
       ] }} >
 
-      <Marker  tabindex="0" label="1" title="St. Jude Primary School" position={{lat: 50.851267, lng: -1.2010895}} onClick={(event) => console.log("St. Jude Primary School")} />
-      <Marker  tabindex="0" label="2" title="Sacred Heart Church"     position={{lat: 50.851218, lng: -1.178828}} onClick={(event) => console.log("Sacred Heart Church")} />
-      <Marker  tabindex="0" label="3" title="Fareham Public Library"  position={{lat: 50.853946, lng: -1.177275 }} onClick={(event) => console.log("Fareham Public Library")} />
-      <Marker  tabindex="0" label="4" title="Fareham Train Station"   position={{lat: 50.852934, lng: -1.191898 }} onClick={(event) => console.log("Fareham Train Station")} />
-      <Marker  tabindex="0" label="5" title="Fareham Leisure Centre"  position={{lat: 50.8574, lng: -1.1849 }} onClick={(event) => console.log("Fareham Leisure Centre")} />}
+      <Marker  tabIndex="0" label="1" title="St. Jude Primary School" position={{lat: 50.851267, lng: -1.2010895}} onClick={(event) => console.log("St. Jude Primary School")} />
+      <Marker  tabIndex="0" label="2" title="Sacred Heart Church"     position={{lat: 50.851218, lng: -1.178828}} onClick={(event) => console.log("Sacred Heart Church")} />
+      <Marker  tabIndex="0" label="3" title="Fareham Public Library"  position={{lat: 50.853946, lng: -1.177275 }} onClick={(event) => console.log("Fareham Public Library")} />
+      <Marker  tabIndex="0" label="4" title="Fareham Train Station"   position={{lat: 50.852934, lng: -1.191898 }} onClick={(event) => console.log("Fareham Train Station")} />
+      <Marker  tabIndex="0" label="5" title="Fareham Leisure Centre"  position={{lat: 50.8574, lng: -1.1849 }} onClick={(event) => console.log("Fareham Leisure Centre")} />}
 
   </GoogleMap>
 ))

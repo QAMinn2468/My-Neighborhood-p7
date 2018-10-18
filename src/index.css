@@ -7,7 +7,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: lightgrey;
+  background-color: #e0e0e0;
 }
 
 /**************************Banner Styling*****************************************/
@@ -24,8 +24,8 @@ html, body {
 
 /**************************Sidebar Styling*****************************************/
 .sidebar {
-  background-color: lightgrey;
-  color: crimson;
+  background-color: #e0e0e0;                                                    /*Varient of Crimson-LightGrey that acheives 4.70:1 ratio */
+  color: #c01235;
   z-index: 2;
   height: 100%;
   width: 16em;
@@ -49,7 +49,7 @@ ol {
 li {
   margin: 20px;
   font-weight: bold;
-  background-color: lightgrey;
+  background-color: #e0e0e0;
 
 }
 
@@ -93,6 +93,6 @@ footer {
   }
 
 html, body {
-    background-color: lightgrey;
+    background-color: #e0e0e0;
   }
 }
