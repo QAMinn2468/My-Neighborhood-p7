@@ -9,13 +9,14 @@ import Sidebar from './sidebar.js'
 
 class App extends Component {
   state = {
-    places: []
-  }
+    places: [],
+    markers: []
+    }
 
   componentDidMount() {
       fetch('https://api.myjson.com/bins/1bsbyw')
         .then(res => res.json())
-        .then(myJSON => this.setState({ places: myJSON }))
+        .then(myJSON => this.setState({ places: myJSON, markers: myJSON }))
         .catch(error =>
           alert("I'm sorry, there was an error"));
   }
@@ -26,8 +27,8 @@ class App extends Component {
     return (
       <div className="App">
         <Banner />
-        <Sidebar places={this.state.places} />
-        <Map places={this.state.places} />
+        <Sidebar {...this.state} />
+        <Map {...this.state} />
       </div>
     );
   }
