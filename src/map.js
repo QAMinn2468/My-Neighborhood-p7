@@ -13,7 +13,7 @@ import {
  // this if for max size (lng -1.1855) zoom 15.2. when reduced, take zoom to 14.8, adjust lng (-1.19) increase % on smaller screens
 
 const MyMapComponent = withScriptjs(
-  withGoogleMap((props) =>
+  withGoogleMap(props =>
   <GoogleMap
       defaultZoom={15.2}
       defaultCenter={{lat: 50.853673, lng: -1.193}}
@@ -120,7 +120,9 @@ const MyMapComponent = withScriptjs(
           }
       ] }} >
 
-
+      {props.markers.map((marker, index) => (
+        <Marker key={index} position={{ marker.position }} />
+      ))}
 
   </GoogleMap>
 ))
