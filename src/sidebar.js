@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './index.css'
-import Figure from './figure.js'
 
 /*********************************Start of Component***************************/
 class Sidebar extends Component {
@@ -44,8 +43,11 @@ class Sidebar extends Component {
                       id="listed"
                       >
                       {place.title}
-                      <Figure {...this.props}/>
-
+                      <br />
+                      <figure>
+                      <img src={place.photo} alt={place.title} />
+                      <figcaption>Taken by: {place.attribution}</figcaption>
+                      </figure>
                   </li>
               ))
             }
