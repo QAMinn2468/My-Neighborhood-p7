@@ -120,7 +120,7 @@ const MyMapComponent = withScriptjs(
           }
       ] }} >
 
-      {props.markers.map((marker, index) => (
+      {props.markers && props.markers.map((marker, index) => (
         <Marker key={ index } tabIndex="0" title={ marker.title } position= { marker.position } onClick={(event) => console.log("{ marker.title }") } />
       ))}
 

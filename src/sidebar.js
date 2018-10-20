@@ -17,9 +17,6 @@ class Sidebar extends Component {
 
 /********************************Render Method*********************************/
   render() {
-    const listed = document.getElementById(listed)
-
-
 
     return (
       <div className="sidebar">
@@ -45,11 +42,10 @@ class Sidebar extends Component {
                   <li key={place.title}
                       tabIndex="0"
                       id="listed"
-                      onClick={(event) =>
-                        listed.appendChild(
-                          <Figure place={this.props.place}/>
-                        )}>
+                      >
                       {place.title}
+                      <Figure {...this.props}/>
+
                   </li>
               ))
             }
