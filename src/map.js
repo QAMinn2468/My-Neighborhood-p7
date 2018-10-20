@@ -121,7 +121,12 @@ const MyMapComponent = withScriptjs(
       ] }} >
 
       {props.markers && props.markers.map((marker, index) => (
-        <Marker key={ index } tabIndex="0" title={ marker.title } position= { marker.position } onClick={(event) => console.log("{ marker.title }") } />
+        <Marker
+          key={ index }
+          tabIndex="0"
+          title={ marker.title }
+          position= { marker.position }
+          onClick={(event) => console.log("{ marker.title }") } />
       ))}
 
   </GoogleMap>
