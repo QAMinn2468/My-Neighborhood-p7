@@ -45,7 +45,7 @@ class Sidebar extends Component {
                       {place.title}
                       <br />
                       <figure>
-                      <img src={place.photo} alt={place.title} />
+                      <img src={place.photo} alt="Venue Image" />
                       <figcaption>Taken by: {place.attribution}</figcaption>
                       </figure>
                   </li>

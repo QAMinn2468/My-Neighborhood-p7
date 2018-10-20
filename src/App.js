@@ -13,6 +13,25 @@ class App extends Component {
     markers: []
     }
 
+closeAllMarkers = () => {
+  const markers = this.state.markers.map( marker => {
+    marker.isVisible = false
+    return marker
+  })
+  this.setState({markers: Object.assign(this.state.markers, markers)})
+}
+
+handleMarkerClick = (marker) => {
+  this.closeAllMarkers()
+  marker.isMarkerShown = true
+  this.setState({markers: Object.assign(this.state.markers, marker)})
+}
+
+
+
+
+
+
   componentDidMount() {
       fetch('https://api.myjson.com/bins/1bsbyw')
         .then(res => res.json())
@@ -28,7 +47,8 @@ class App extends Component {
       <div className="App">
         <Banner />
         <Sidebar {...this.state} />
-        <Map {...this.state} />
+        <Map {...this.state}
+          handleMarkerClick={this.handleMarkerClick}/>
       </div>
     );
   }

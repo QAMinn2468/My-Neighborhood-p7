@@ -4,11 +4,8 @@ import {
          withGoogleMap,
          GoogleMap,
          Marker,
-         // InfoWindow
+         InfoWindow
        } from "react-google-maps"
-// import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox"
-
-
 
  // this if for max size (lng -1.1855) zoom 15.2. when reduced, take zoom to 14.8, adjust lng (-1.19) increase % on smaller screens
 
@@ -120,13 +117,23 @@ const MyMapComponent = withScriptjs(
           }
       ] }} >
 
-      {props.markers && props.markers.filter(marker => marker.isMarkerShown).map((marker, index) => (
-        <Marker
-          key={ index }
-          tabIndex="0"
-          title={ marker.title }
-          position= { marker.position }
-          onClick={(event) => console.log("{ marker.title }") } />
+      {props.markers && props.markers
+        .filter(marker => marker.isMarkerShown)
+        .map((marker, index) => (
+          <Marker
+            key={ index }
+            tabIndex="0"
+            title={ marker.title }
+            position= { marker.position }
+            onClick={() => props.handleMarkerClick(marker) }>
+          {marker.isMarkerShown && (
+            <InfoWindow>
+              <p>{ marker.title }</p>
+            </InfoWindow>)}
+
+          </Marker>
+
+
       ))}
 
   </GoogleMap>
