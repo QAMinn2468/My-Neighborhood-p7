@@ -39,7 +39,9 @@ html, body {
 }
 
 .filterBox {
-  width: 15em;
+  width: 17em;
+  height: 2em;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 ol {
