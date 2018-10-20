@@ -120,7 +120,7 @@ const MyMapComponent = withScriptjs(
           }
       ] }} >
 
-      {props.markers && props.markers.map((marker, index) => (
+      {props.markers && props.markers.filter(marker => marker.isMarkerShown).map((marker, index) => (
         <Marker
           key={ index }
           tabIndex="0"
