@@ -15,7 +15,7 @@ class App extends Component {
 
 closeAllMarkers = () => {
   const markers = this.state.markers.map( marker => {
-    marker.isVisible = false
+    marker.isMarkerShown = false
     return marker
   })
   this.setState({markers: Object.assign(this.state.markers, markers)})
@@ -27,7 +27,9 @@ handleMarkerClick = (marker) => {
   this.setState({markers: Object.assign(this.state.markers, marker)})
 }
 
-
+handleListItemClick = (place) => {
+  console.log('Click')
+}
 
 
 
@@ -46,9 +48,8 @@ handleMarkerClick = (marker) => {
     return (
       <div className="App">
         <Banner />
-        <Sidebar {...this.state} />
-        <Map {...this.state}
-          handleMarkerClick={this.handleMarkerClick}/>
+        <Sidebar {...this.state} handleListItemClick={this.handleListItemClick} />
+        <Map {...this.state} handleMarkerClick={this.handleMarkerClick} />
       </div>
     );
   }

@@ -86,6 +86,12 @@ figcaption {
 footer {
   text-align: center;
 }
+/***********************InfoWindow*********************************************/
+.info {
+
+
+}
+
 
 /**************************Break Point*****************************************/
 @media screen and (max-width: 550px) {

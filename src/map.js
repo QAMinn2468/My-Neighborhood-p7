@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import './index.css'
 import {
          withScriptjs,
          withGoogleMap,
@@ -126,10 +127,11 @@ const MyMapComponent = withScriptjs(
             title={ marker.title }
             position= { marker.position }
             onClick={() => props.handleMarkerClick(marker) }>
-          {marker.isMarkerShown && (
-            <InfoWindow>
-              <p>{ marker.title }</p>
-            </InfoWindow>)}
+              {marker.isMarkerShown && (
+                <InfoWindow
+                className="info">
+                  <p>{ marker.title }</p>
+                </InfoWindow>)}
 
           </Marker>
 
