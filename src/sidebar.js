@@ -35,14 +35,13 @@ class Sidebar extends Component {
           <ol className="filteredList"
               type="1"
               places={this.props.places}
-              handleListItemClick={this.props.handleListItemClick()}
               >
               {this.props.places && this.props.places
                 .map((place, index) => (
                   <li key={index}
                       tabIndex="0"
                       id="listed"
-                      onClick={() => this.props.handleListItemClick(place) }>
+                      onClick={() => this.props.handleListItemClick(this.props) }>
                         {place.title}
                         <br />
                         <figure>
