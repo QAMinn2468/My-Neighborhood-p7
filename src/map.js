@@ -1,3 +1,4 @@
+/*global google */
 import React, { Component } from "react"
 import './index.css'
 import {
@@ -122,13 +123,14 @@ const MyMapComponent = withScriptjs(
 
       {props.markers && props.markers
         .filter(marker => marker.isMarkerShown)
-        .map((marker, index) => (
+        .map((marker, index, array) => (
           <Marker
             key={ index }
             tabIndex="0"
             aria-label="application"
             title={ marker.title }
             position= { marker.position }
+            animation={array.length === 1? google.maps.Animation.BOUNCE : google.maps.Animation.DROP }
             onClick={() => props.handleMarkerClick(marker) }>
               {marker.isOpen && (
                 <InfoWindow
