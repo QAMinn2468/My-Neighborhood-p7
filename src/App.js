@@ -21,21 +21,22 @@ closeAllMarkers = () => {
   this.setState({markers: Object.assign(this.state.markers, markers)})
 }
 
-handleMarkerClick = (marker) => {
+handleMarkerClick = marker => {
   this.closeAllMarkers()
   marker.isOpen = true
-  this.setState({markers: Object.assign(this.state.markers, marker)})
+  this.setState({markers: Object.assign(this.state.markers, marker) })
+  const place = this.state.places.find( place => place.id === marker.id )
 }
 
-handleListItemClick = (place) => {
-  const marker = this.state.markers.find(marker => marker.id === place.id)
+handleListItemClick = place => {
+  const marker = this.state.markers.find( marker => marker.id === place.id )
   this.handleMarkerClick(marker)
 }
 
 /***************************componentDidMount**********************************/
 
   componentDidMount() {
-      fetch('https://api.myjson.com/bins/1ehktg')
+      fetch('https://api.myjson.com/bins/ckhas')
         .then(res => res.json())
         .then(myJSON => this.setState({ places: myJSON, markers: myJSON }))
         .catch(error =>

@@ -59,19 +59,7 @@ li:hover {
   font-size: 1.1em;
 }
 
-figure img {
-  width: 12em;
-}
 
-figure {
-  margin-left: 0.1px;
-}
-
-figcaption {
-  color: black;
-  font-weight: normal;
-  font-size: .7em;
-}
 
 /**************************Map Styling*****************************************/
 
@@ -82,6 +70,22 @@ figcaption {
 /* .top {
   height: 3.5em;  /*This allows the google map full screen icon to be seen and used */
 /* } */
+
+figure img {
+  width: 12em;
+  text-align: center;
+  
+}
+
+figure {
+  margin: 0.1px;
+}
+
+figcaption {
+  color: black;
+  font-weight: normal;
+  font-size: .7em;
+}
 
 footer {
   text-align: center;

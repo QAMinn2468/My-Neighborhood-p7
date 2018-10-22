@@ -32,9 +32,9 @@ class Sidebar extends Component {
         </div>
 
         <h2>Results</h2>
-          <ul className="filteredList"
-              places={this.props.places}
-              >
+          <ul
+              className="filteredList"
+              places={this.props.places}>
               {this.props.places && this.props.places
                 .map((place, index) => (
                   <li key={index}
