@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './index.css'
+import Result from './result.js'
 
 /*********************************Start of Component***************************/
 class Sidebar extends Component {
@@ -7,11 +8,20 @@ class Sidebar extends Component {
     query: ''
   }
 
+handleFilterPlaces = () => {
+  if (this.state.query.trim() !== "") {
+    const places = this.props.places.filter( place => place.title
+        .toLowerCase()
+        .includes(this.state.query.toLowerCase()))
+     return places
+  }
+  return this.props.places
+}
+
 updateQuery = event => {
   this.setState({
     query: event.target.value
   })
-  console.log(event.target.value)
   const markers = this.props.places.map(place => {
     const isMatched = place.title
       .toLowerCase()
@@ -25,14 +35,14 @@ updateQuery = event => {
     return marker
   })
   this.props.updateSuperState({markers})
-}
+  }
 
 
 /********************************Render Method*********************************/
   render() {
 
     return (
-      <div className="sidebar">
+      <div className="sidebar" >
         <div className="filter">
           <input
               aria-label="input"
@@ -40,25 +50,13 @@ updateQuery = event => {
               type="search"
               placeholder="  Filter by Name"
               value={this.state.query}
-              onChange={(event) =>
-                this.updateQuery(event)}
-              ></input>
+              onChange={(event) => {
+                this.updateQuery(event)
+              }}>
+              </input>
         </div>
+          <Result places = {this.handleFilterPlaces()} />
 
-        <h2>Results</h2>
-          <ul
-              className="filteredList"
-              places={this.props.places}>
-              {this.props.places && this.props.places
-                .map((place, index) => (
-                  <li key={ index }
-                      tabIndex="0"
-                      onClick={() => this.props.handleListItemClick(place) }>
-                        { place.title }
-                  </li>
-                ))
-              }
-          </ul>
       </div>
     );
   }
