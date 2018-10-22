@@ -15,7 +15,7 @@ class App extends Component {
 
 closeAllMarkers = () => {
   const markers = this.state.markers.map( marker => {
-    marker.isMarkerShown = false
+    marker.isOpen = false
     return marker
   })
   this.setState({markers: Object.assign(this.state.markers, markers)})
@@ -23,7 +23,7 @@ closeAllMarkers = () => {
 
 handleMarkerClick = (marker) => {
   this.closeAllMarkers()
-  marker.isMarkerShown = true
+  marker.isOpen = true
   this.setState({markers: Object.assign(this.state.markers, marker)})
 }
 
@@ -32,15 +32,14 @@ handleListItemClick = (place) => {
   this.handleMarkerClick(marker)
 }
 
-
-
+/***************************componentDidMount**********************************/
 
   componentDidMount() {
       fetch('https://api.myjson.com/bins/1ehktg')
         .then(res => res.json())
         .then(myJSON => this.setState({ places: myJSON, markers: myJSON }))
         .catch(error =>
-          alert("I'm sorry, there was an error"));
+          alert("I'm sorry, there was an error"))
   }
 
 /********************************Render Method*********************************/

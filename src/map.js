@@ -127,10 +127,17 @@ const MyMapComponent = withScriptjs(
             title={ marker.title }
             position= { marker.position }
             onClick={() => props.handleMarkerClick(marker) }>
-              {marker.isMarkerShown && (
+              {marker.isOpen && (
                 <InfoWindow
                 className="info">
-                  <p>{ marker.title }</p>
+                  <div>
+                      <p>{ marker.title }</p>
+                      <br />
+                      <figure>
+                      <img src={marker.photo} alt={marker.title} />
+                      <figcaption>Taken by: {marker.attribution}</figcaption>
+                      </figure>
+                  </div>
                 </InfoWindow>)}
 
           </Marker>

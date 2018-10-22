@@ -32,8 +32,7 @@ class Sidebar extends Component {
         </div>
 
         <h2>Results</h2>
-          <ol className="filteredList"
-              type="1"
+          <ul className="filteredList"
               places={this.props.places}
               >
               {this.props.places && this.props.places
@@ -42,16 +41,11 @@ class Sidebar extends Component {
                       tabIndex="0"
                       id={index}
                       onClick={() => this.props.handleListItemClick(this.props) }>
-                        {place.title}
-                        <br />
-                        <figure>
-                        <img src={place.photo} alt={place.title} />
-                        <figcaption>Taken by: {place.attribution}</figcaption>
-                        </figure>
+                        <p>{ place.title }</p>
                   </li>
               ))
             }
-          </ol>
+          </ul>
       </div>
     );
   }
