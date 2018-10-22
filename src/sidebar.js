@@ -37,14 +37,13 @@ class Sidebar extends Component {
               places={this.props.places}>
               {this.props.places && this.props.places
                 .map((place, index) => (
-                  <li key={index}
+                  <li key={ index }
                       tabIndex="0"
-                      id={index}
-                      onClick={() => this.props.handleListItemClick(this.props) }>
-                        <p>{ place.title }</p>
+                      onClick={() => this.props.handleListItemClick(place) }>
+                        { place.title }
                   </li>
-              ))
-            }
+                ))
+              }
           </ul>
       </div>
     );
