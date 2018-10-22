@@ -13,6 +13,8 @@ import {
 const MyMapComponent = withScriptjs(
   withGoogleMap(props =>
   <GoogleMap
+      aria-label="application"
+      tabIndex="0"
       defaultZoom={15.2}
       defaultCenter={{lat: 50.853673, lng: -1.193}}
       defaultOptions={{ styles: [
@@ -124,6 +126,7 @@ const MyMapComponent = withScriptjs(
           <Marker
             key={ index }
             tabIndex="0"
+            aria-label="application"
             title={ marker.title }
             position= { marker.position }
             onClick={() => props.handleMarkerClick(marker) }>

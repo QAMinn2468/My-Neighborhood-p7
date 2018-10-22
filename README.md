@@ -9,6 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Download from https://github.com/QAMinn2468/p7.  On the command line, in the program folder, type: 'yarn install' then 'yarn start'.  This will open a local server on your browser where you may view the project.
 
+To run in Production Mode type: yarn run build
+
 
 # A11y
 

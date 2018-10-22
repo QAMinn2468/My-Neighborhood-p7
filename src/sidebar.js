@@ -55,7 +55,11 @@ updateQuery = event => {
               }}>
               </input>
         </div>
-          <Result places = {this.handleFilterPlaces()} />
+          <Result
+              {...this.state}
+              places = {this.handleFilterPlaces()}
+              handleListItemClick={this.handleListItemClick}
+              />
 
       </div>
     );
