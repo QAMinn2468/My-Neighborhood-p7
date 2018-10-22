@@ -58,7 +58,7 @@ updateQuery = event => {
           <Result
               {...this.state}
               places = {this.handleFilterPlaces()}
-              handleListItemClick={this.handleListItemClick}
+              handleListItemClick={this.props.handleListItemClick}
               />
 
       </div>
