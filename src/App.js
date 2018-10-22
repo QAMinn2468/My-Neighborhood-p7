@@ -28,7 +28,8 @@ handleMarkerClick = (marker) => {
 }
 
 handleListItemClick = (place) => {
-  console.log('Click')
+  const marker = this.state.markers.find(marker => marker.id === place.id)
+  this.handleMarkerClick(marker)
 }
 
 

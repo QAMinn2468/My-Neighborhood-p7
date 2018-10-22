@@ -23,7 +23,7 @@ class Sidebar extends Component {
           <input
               aria-label="input"
               className="filterBox"
-              type="text"
+              type="search"
               placeholder="  Filter by Name"
               value={this.state.query}
               onChange={(event) =>
@@ -40,7 +40,7 @@ class Sidebar extends Component {
                 .map((place, index) => (
                   <li key={index}
                       tabIndex="0"
-                      id="listed"
+                      id={index}
                       onClick={() => this.props.handleListItemClick(this.props) }>
                         {place.title}
                         <br />
