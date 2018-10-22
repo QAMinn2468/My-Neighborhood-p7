@@ -36,7 +36,7 @@ handleListItemClick = (place) => {
 
 
   componentDidMount() {
-      fetch('https://api.myjson.com/bins/1bsbyw')
+      fetch('https://api.myjson.com/bins/1ehktg')
         .then(res => res.json())
         .then(myJSON => this.setState({ places: myJSON, markers: myJSON }))
         .catch(error =>

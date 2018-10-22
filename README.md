@@ -56,11 +56,13 @@ Google Maps Platform API Checker - version 1.1.8
 
 ChromeVox
 
+
+
 # To Update My API
 
 http://myjson.com/api
 
-the direct website: http://myjson.com/6k8i0
+the direct website: https://api.myjson.com/bins/1ehktg
 
 
 
