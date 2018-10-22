@@ -50,8 +50,6 @@ http://myjson.com/ - Used to create my own API.
 https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/ - Intro to using API's
 
 
-
-
 # Chrome Extensions - helpful, not necessary
 
 Google Maps Platform API Checker - version 1.1.8
@@ -59,23 +57,8 @@ Google Maps Platform API Checker - version 1.1.8
 ChromeVox
 
 
-
 # To Update My API
 
 http://myjson.com/api
 
 the direct website: https://api.myjson.com/bins/ckhas
-
-
-
-
-
-
-
-#  Materials to be used:
-
-https://tomchentw.github.io/react-google-maps/#infowindow         https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow.setContent
-
-https://tomchentw.github.io/react-google-maps/#infobox         
-
-   http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/infobox/docs/reference.html
