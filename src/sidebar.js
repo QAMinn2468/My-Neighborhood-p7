@@ -7,10 +7,24 @@ class Sidebar extends Component {
     query: ''
   }
 
-  updateQuery = (query) => {
+updateQuery = event => {
   this.setState({
-    query: query
+    query: event.target.value
   })
+  console.log(event.target.value)
+  const markers = this.props.places.map(place => {
+    const isMatched = place.title
+      .toLowerCase()
+      .includes(event.target.value.toLowerCase())
+    const marker = this.props.markers.find(marker => marker.id === place.id)
+    if (isMatched) {
+      marker.isMarkerShown = true
+    } else {
+      marker.isMarkerShown = false
+    }
+    return marker
+  })
+  this.props.updateSuperState({markers})
 }
 
 
@@ -27,7 +41,7 @@ class Sidebar extends Component {
               placeholder="  Filter by Name"
               value={this.state.query}
               onChange={(event) =>
-                this.updateQuery(event.target.value)}
+                this.updateQuery(event)}
               ></input>
         </div>
 

@@ -10,8 +10,13 @@ import Sidebar from './sidebar.js'
 class App extends Component {
   state = {
     places: [],
-    markers: []
+    markers: [],
+    updateSuperState: obj => {
+      this.setState(obj)
     }
+    }
+
+
 
 closeAllMarkers = () => {
   const markers = this.state.markers.map( marker => {
@@ -32,6 +37,8 @@ handleListItemClick = place => {
   const marker = this.state.markers.find( marker => marker.id === place.id )
   this.handleMarkerClick(marker)
 }
+
+
 
 /***************************componentDidMount**********************************/
 
