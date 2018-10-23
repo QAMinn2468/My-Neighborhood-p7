@@ -30,7 +30,6 @@ handleMarkerClick = marker => {
   this.closeAllMarkers()
   marker.isOpen = true
   this.setState({markers: Object.assign(this.state.markers, marker) })
-  const places = this.state.places.find( place => place.id === marker.id )
 }
 
 handleListItemClick = place => {

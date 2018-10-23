@@ -9,8 +9,6 @@ import {
          InfoWindow
        } from "react-google-maps"
 
- // this if for max size (lng -1.1855) zoom 15.2. when reduced, take zoom to 14.8, adjust lng (-1.19) increase % on smaller screens
-
 const MyMapComponent = withScriptjs(
   withGoogleMap(props =>
   <GoogleMap
@@ -153,6 +151,7 @@ const MyMapComponent = withScriptjs(
   </GoogleMap>
 ))
 
+
 /*********************************Start of Component***************************/
 
 export default class Map extends Component {
@@ -166,12 +165,12 @@ export default class Map extends Component {
         {...this.props}
         isMarkerShown
         googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAKWNbLQsSKzpiC-JHL86FKXVM5EMwVUwE"
+        onError={(error) => alert("I'm sorry, there was an error with Google Maps")}
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `720px` }} />}
         mapElement={<div style={{ height: `100%` }} />}
         />
       </div>
-
-)
+     )
   }
 }

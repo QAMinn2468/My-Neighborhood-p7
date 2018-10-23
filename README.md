@@ -49,6 +49,8 @@ http://myjson.com/ - Used to create my own API.
 
 https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/ - Intro to using API's
 
+https://discussions.udacity.com/t/handling-google-maps-in-async-and-fallback/34282/32 - thread discussing Google Maps async, defer, and error handling
+
 
 # Chrome Extensions - helpful, not necessary
 
