@@ -51,6 +51,9 @@ https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/ - Intro to
 
 https://discussions.udacity.com/t/handling-google-maps-in-async-and-fallback/34282/32 - thread discussing Google Maps async, defer, and error handling
 
+https://www.robinwieruch.de/react-fetching-data/#react-fetch-data-higher-order-component - React article discussing data handling in higher order components
+
+https://reactjs.org/docs/react-component.html#componentdidcatch - React documentation on componentDidCatch()
 
 # Chrome Extensions - helpful, not necessary
 

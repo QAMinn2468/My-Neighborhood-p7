@@ -36,8 +36,11 @@ handleListItemClick = place => {
   const marker = this.state.markers.find( marker => marker.id === place.id )
   this.handleMarkerClick(marker)
 }
+/***************************componentDidCatch**********************************/
 
-
+  componentDidCatch(error) {
+    alert("There was an error.")
+  }
 
 /***************************componentDidMount**********************************/
 

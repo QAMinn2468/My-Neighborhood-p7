@@ -9,6 +9,7 @@ import {
          InfoWindow
        } from "react-google-maps"
 
+
 const MyMapComponent = withScriptjs(
   withGoogleMap(props =>
   <GoogleMap
@@ -142,12 +143,8 @@ const MyMapComponent = withScriptjs(
                       </figure>
                   </div>
                 </InfoWindow>)}
-
           </Marker>
-
-
       ))}
-
   </GoogleMap>
 ))
 
@@ -165,7 +162,6 @@ export default class Map extends Component {
         {...this.props}
         isMarkerShown
         googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAKWNbLQsSKzpiC-JHL86FKXVM5EMwVUwE"
-        onError={(error) => alert("I'm sorry, there was an error with Google Maps")}
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `720px` }} />}
         mapElement={<div style={{ height: `100%` }} />}
